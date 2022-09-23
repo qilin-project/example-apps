@@ -1,15 +1,5 @@
 # example-apps
 
-To install dependencies:
+Instructions for all individual apps are located in their own `README.md` files.
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v0.1.13. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Choose one and be happy :)

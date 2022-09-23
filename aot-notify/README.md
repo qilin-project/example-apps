@@ -8,28 +8,28 @@
 How to add this app to qilin:
 
 **1.** Clone this repo:<br>
-> `git clone https://github.com/qilin-project/example-apps`
+> git clone https://github.com/qilin-project/example-apps
 
 
 **1.1.** Cd into the aot folder:<br>
-> `cd example-apps/aot-notify`
+> cd example-apps/aot-notify
 
 
 **2.** Move `apps` and `utils/aot` to the `src` folder in your installation of qilin
-> `cp -r apps $qilin-install/src`
-> `cp -r utils/aot $qilin-install/src/utils/`
+> cp -r apps $qilin-install/src <br>
+> cp -r utils/aot $qilin-install/src/utils/
 
 **2.1.** (*Temporary*) Move `data/aot` into `src` folder in your installation of qilin. <br>
-> `cp -r data/aot $qilin-install/src/data/`
+> cp -r data/aot $qilin-install/src/data/
 
 **2.2.** To add new fics to the watcher:<br>
     ~ Edit `data/aot`. Append to the end of the array an object containing the id and last chapter code of the fic. e.g: <br>
          This: 
->`[{"id":"38700753","last_chapter_code":"103818741"}]` <br>
+>[{"id":"38700753","last_chapter_code":"103818741"}] <br>
 
 Into this:  
 
->`[{"id":"38700753","last_chapter_code":"103818741"},{"id":"41275998", "last_chapter_code":"103952787"}]`
+>[{"id":"38700753","last_chapter_code":"103818741"},{"id":"41275998", "last_chapter_code":"103952787"}]
 
 **IMPORTANT: Do not copy/move ANYTHING ELSE. These files might be outdated and might break your qilin installation. They are only there so vscode doesn't scream at me and will only be updated when absolutely necessary! :)**
 
@@ -38,7 +38,7 @@ Into this:
 ~ By default the watcher is enabled and searches every 1 hour. If you want, change it.
 
 **4.** Install dependencies: <br>
->`bun install cheerio @types/node`<br>
+>bun install cheerio @types/node<br>
 >(In your *qilin* installation, not in this repo!)
 
 
